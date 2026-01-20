@@ -1,40 +1,308 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio - Michele de Oliveira Martins</title>
+    <title>Portifólio - Michele O Martins</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
+    <nav class="navbar">
+      <div class="nav-container">
+        <span class="logo">MM</span>
+
+        <button class="menu-toggle" type="button">☰</button>
+
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+      <h1><span>Michele de Oliveira Martins</span></h1>
+      <p>
+        Desenvolvedora e Analista de dados em formação | Web • Apps • Dados<br />
+        Criando soluções digitais com foco em estratégia, clareza e impacto.
+      </p>
     </header>
 
     <main>
-      <section id="construcao">
-        <h1>ATENÇÃO, ESTE SITE ESTÁ EM CONSTRUÇÃO</h1>
-        <img
-          src="https://prad.unifei.edu.br/dcc/wp-content/uploads/sites/3/2024/07/pagina_em.png"
-          alt="imagem de em construção"
-        />
-      </section>
+      <section id="sobre" class="section">
+        <h2>Sobre mim</h2>
+        <div class="about">
+          <p>
+            Sou estudante de Ciência da Computação, em transição de carreira
+            para a área de tecnologia, com perfil analítico e estratégico.
+          </p>
 
-      <section id="home">
-        <div class="home-content">
-          <img src="" alt="Foto de perfil" />
-          <h1>Olá, meu nome é Michele de Oliveira Martins</h1>
-          <p>[sou XYZ]</p>
-          <a href="#contato" class="button">Entre em Contato</a>
+          <ul id="habilidades" class="skills">
+            <li>Inglês C1</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Git</li>
+            <li>Markdown</li>
+            <li>Excel</li>
+            <li>PowerBI</li>
+            <li>GitHub</li>
+            <li>VScode/IntelliJ</li>
+            <li>Postgres</li>
+            <li>Node.js</li>
+            <li>Google Cloud Computing Foundations</li>
+            <li>Figma</li>
+            <li>Projeto ágil / Scrum / Kanban / Lean</li>
+          </ul>
         </div>
       </section>
+
+      <section id="projetos" class="section">
+        <h2>Projetos</h2>
+
+        <div class="projects">
+          <article class="card">
+            <h3>Site Institucional - Kaizen Administradora</h3>
+            <p>
+              Site responsivo desenvolvido para a empresa Kaizen Admnistradora,
+              com foco em usabilidade, identidade visual e boas práticas de
+              desenvolvimento web.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://admkaizen.com.br/"
+                class="btn btn-primary"
+                target="_blank"
+                >Site</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Google Calendar & Google Sheets Sync - Eventos Condominiais</h3>
+            <p>
+              O código é uma função JavaScript. De forma automatizada, ele
+              atualiza ou cria novos eventos no calendário com base nas
+              informações da planilha, atribuindo categorias e cores específicas
+              para cada tipo de evento.
+            </p>
+            <div class="tags">
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/MicheleOM/sync-google-sheets-and-calendar"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Projeto de Dados</h3>
+            <p>
+              Análise de dados com limpeza, exploração e visualização para apoio
+              à decisão.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>SQL</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary" target="_blank">Demo</a>
+              <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Desafio - NFT Preview Card Component</h3>
+            <p>
+              Este projeto é uma solução para um desafio do site Frontend
+              Mentor.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/MicheleOM/NFT-preview-card-component"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Site - Landing Page Game</h3>
+            <p>
+              Projeto de Prática: HTML, CSS e JavaScript: Página de apresentação
+              de game
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://micheleom.github.io/projeto-pagina-apresentacao-game/"
+                class="btn btn-primary"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MicheleOM/projeto-pagina-apresentacao-game"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Site - Simple Memory Card Game</h3>
+            <p>Este é um jogo simples de memória implementado técnicas.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://micheleom.github.io/simple-memory-card/"
+                class="btn btn-primary"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MicheleOM/simple-memory-card"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Site - Seletor de personagens</h3>
+            <p>
+              Este é um pequeno responsivo realizado junto à aula/live do
+              DevEmDobro.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://micheleom.github.io/projeto-seletor-de-personagens/"
+                class="btn btn-primary"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MicheleOM/projeto-seletor-de-personagens"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Site - Roll the dice</h3>
+            <p>Este é um projeto simples de um simulador de dado em 3D.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://micheleom.github.io/roll-the-dice/"
+                class="btn btn-primary"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MicheleOM/roll-the-dice"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Site - Mini Portifólio</h3>
+            <p>
+              Meu primeiro projeto pessoal desenvolvido, um mini portifólio.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://micheleom.github.io/mini-portifolio/"
+                class="btn btn-primary"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MicheleOM/mini-portifolio"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p style="text-align: center; color: var(--color-muted)">
+          Vamos conversar? Me encontre no GitHub ou LinkedIn.
+        </p>
+      </section>
     </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 • Michele Martins<br />
+        <a href="https://github.com/MicheleOM">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/michele-de-oliveira-martins-569098142/"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
